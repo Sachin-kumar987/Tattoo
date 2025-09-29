@@ -63,8 +63,17 @@ npm run eject → Eject configuration (use with caution)
 
 📸 Screenshots
 
-(Add your website screenshots here for better presentation)
+<img width="1875" height="881" alt="Screenshot 2025-09-29 143827" src="https://github.com/user-attachments/assets/58daaa45-6afd-46dd-a644-d4eadb13eb1d" />
 
-🤝 Contributing
+<img width="1872" height="737" alt="Screenshot 2025-09-29 143846" src="https://github.com/user-attachments/assets/ede8df38-bd96-4184-ab32-586e438c03b7" />
 
-Contributions are welcome! If you’d like to improve this project, feel free to fork the repo and create a pull request.
+<img width="1903" height="746" alt="Screenshot 2025-09-29 143905" src="https://github.com/user-attachments/assets/b7f5fa94-39a5-4115-9418-44db3bc63913" />
+
+<img width="1883" height="738" alt="Screenshot 2025-09-29 143935" src="https://github.com/user-attachments/assets/c8cf736f-87f5-4c14-accb-dab2513b1b78" />
+
+<img width="1858" height="719" alt="Screenshot 2025-09-29 144022" src="https://github.com/user-attachments/assets/6f73f2cc-151f-4968-bb2d-da88fc48d70d" />
+
+<img width="1870" height="736" alt="Screenshot 2025-09-29 144040" src="https://github.com/user-attachments/assets/bf55c7b3-2e0e-4314-9902-0c1c5fea9048" />
+
+
+
