@@ -9,6 +9,10 @@ import GalleryImg6 from '../src/img/gallery/6.png';
 import GalleryImg7 from '../src/img/gallery/7.png';
 import GalleryImg8 from '../src/img/gallery/8.png';
 import QuoteImg from '../src/img/testimonial/quote.svg';
+// import articles images
+import ArticleImg1 from '../src/img/articles/1.png';
+import ArticleImg2 from '../src/img/articles/2.png';
+import ArticleImg3 from '../src/img/articles/3.png';
 // import icons
 import {  GrGithub } from 'react-icons/gr';
 import { IoMdArrowForward } from 'react-icons/io';
@@ -233,4 +237,38 @@ export const footerData = {
       icon: <FiSend />,
     },
   },
+};
+
+export const articlesData = {
+  title: 'Latest Articles',
+  subtitle: 'Discover the latest trends, tips, and insights in the world of tattoos',
+  articles: [
+    {
+      id: 1,
+      title: 'Tattoo Aftercare Guide',
+      excerpt: 'Essential tips for proper tattoo care and healing process to ensure your ink looks perfect for years to come.',
+      image: ArticleImg1,
+      date: '2024-01-15',
+      readTime: '5 min read',
+      category: 'Aftercare',
+    },
+    {
+      id: 2,
+      title: 'Choosing the Right Tattoo Style',
+      excerpt: 'Explore different tattoo styles and find the perfect one that matches your personality and aesthetic preferences.',
+      image: ArticleImg2,
+      date: '2024-01-10',
+      readTime: '7 min read',
+      category: 'Style Guide',
+    },
+    {
+      id: 3,
+      title: 'Tattoo Pain Management',
+      excerpt: 'Learn effective techniques to manage discomfort during your tattoo session and what to expect.',
+      image: ArticleImg3,
+      date: '2024-01-05',
+      readTime: '6 min read',
+      category: 'Tips',
+    },
+  ],
 };

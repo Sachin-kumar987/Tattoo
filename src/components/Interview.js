@@ -5,6 +5,8 @@ import { interviewData } from '../data';
 import { motion } from 'framer-motion';
 // import fadeIn animation
 import { fadeIn } from '../variants';
+// import video
+import videoSrc from '../img/interview/video.mp4';
 
 const Interview = () => {
   // destructure interview data
@@ -36,14 +38,16 @@ const Interview = () => {
           >
             <div
               onClick={() => setIsOpen(true)}
-              className="flex items-center gap-x-3 cursor-pointer hover:opacity-80 transition"
+              className="flex items-center gap-x-4 cursor-pointer group hover:scale-105 transition-all duration-300"
             >
-              <div className="w-[60px] h-[60px] border border-white/40 rounded-full flex justify-center items-center">
-                <div className="bg-white w-[40px] h-[40px] rounded-full flex justify-center items-center">
-                  {btnIcon}
+              <div className="w-[70px] h-[70px] border-2 border-white/50 rounded-full flex justify-center items-center group-hover:border-white transition-colors duration-300">
+                <div className="bg-white w-[50px] h-[50px] rounded-full flex justify-center items-center group-hover:bg-gray-100 transition-colors duration-300">
+                  <div className="text-black text-lg ml-1">
+                    {btnIcon}
+                  </div>
                 </div>
               </div>
-              <div className="uppercase font-primary tracking-wide text-white self-center">
+              <div className="uppercase font-primary tracking-wider text-white text-lg font-semibold group-hover:text-gray-200 transition-colors duration-300">
                 {btnText}
               </div>
             </div>
@@ -58,18 +62,26 @@ const Interview = () => {
           onClick={() => setIsOpen(false)}
         >
           <div
-            className="w-full max-w-4xl aspect-video bg-black"
+            className="w-full max-w-4xl aspect-video bg-black relative"
             onClick={(e) => e.stopPropagation()}
           >
-            <iframe
-              title="Interview Video"
-              width="100%"
-              height="100%"
-              src={`https://www.youtube.com/embed/-l1mqYQuNf8?autoplay=1`}
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowFullScreen
-            />
+            <video
+              className="w-full h-full object-cover"
+              controls
+              autoPlay
+              loop
+              muted
+            >
+              <source src={videoSrc} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            {/* Close button */}
+            <button
+              onClick={() => setIsOpen(false)}
+              className="absolute top-4 right-4 text-white text-2xl hover:text-gray-300 transition-colors z-10"
+            >
+              ✕
+            </button>
           </div>
         </div>
       )}
